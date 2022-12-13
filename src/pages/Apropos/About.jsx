@@ -1,4 +1,4 @@
-import Offers from "../../components/OffersBanner/Offer";
+import Offers from "../../components/Offers/Offer";
 import Collapse from "../../components/Chevron/Collapse";
 import aboutArray from "../../OfferDatas/aboutArray.json"; // j'ai créé un fichier JSON avec les données des collapses
 
