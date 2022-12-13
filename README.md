@@ -7,7 +7,7 @@ Kasa vous recrute en tant que développeur front-end en freelance pour développ
 
 ## Objectif 
 
-Démarrer le projet React et développer l’ensemble de l’application, les composants React, les routes React Router
+ Démarrer le projet React et développer l’ensemble de l’application, les composants React, les routes React Router, en suivant les maquettes Figma (responsives !) et toutes les infos que je te donne ci-dessous. Et ce avec un code de qualité !
 
 ## Cahier des charges
 
