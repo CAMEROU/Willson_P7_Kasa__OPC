@@ -3,21 +3,26 @@ import left from "../../assets/images/vector-left.svg";
 import right from "../../assets/images/vector-right.svg";
 
 export default function Carrousel({ slides }) {
-	const [current, setCurrent] = useState(0); //je définie l'index du premier slide à 0
-	const length = slides.length; // longueur du tableau de slides
+	const [current, setCurrent] = useState(0);
+	 //je définie l'index du premier slide à 0
+	const length = slides.length; 
+	// longueur du tableau de slides
 
 	const nextSlide = () => {
-		setCurrent(current === length - 1 ? 0 : current + 1); // on repart au premier slide quand on arrive au dernier
+		setCurrent(current === length - 1 ? 0 : current + 1); 
+		// on repart au premier slide quand on arrive au dernier
 	};
 	const prevSlide = () => {
-		setCurrent(current === 0 ? length - 1 : current - 1); // on repart au dernier slide quand on est au premier
+		setCurrent(current === 0 ? length - 1 : current - 1); 
+		// on repart au dernier slide quand on est au premier
 	};
 
 	return (
+		//Affichage des flèches seulement si length > 1
 		<section id="carrousel-container">
 			{length > 1 && (
 				<img
-					src={left} //Affichage des flèches seulement si length > 1
+					src={left} 
 					alt="gauche"
 					onClick={prevSlide}
 					className="leftArrow"
@@ -33,8 +38,7 @@ export default function Carrousel({ slides }) {
 			)}
 			{slides.map((slide, index) => (
 				<div
-					key={index} // mise en place du slider avec affichage conditionnel 
-					//et opacity=1 quand le slide en cours vaut l'index
+					key={index}
 					className={
 						current === index
 							? "slider bl-msk wh-msk active-anim"
@@ -52,3 +56,5 @@ export default function Carrousel({ slides }) {
 		</section>
 	);
 }
+// mise en place du slider avec affichage conditionnel 
+					//et opacity=1 quand le slide en cours vaut l'index

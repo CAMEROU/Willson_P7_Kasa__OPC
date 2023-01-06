@@ -1,6 +1,7 @@
 import Offers from "../../components/Offers/Offer";
 import Collapse from "../../components/Chevron/Collapse";
-import aboutArray from "../../OfferDatas/aboutArray.json"; // j'ai créé un fichier JSON avec les données des collapses
+import aboutArray from "../../OfferDatas/aboutArray.json";
+ // j'ai créé un fichier JSON avec les données des collapses
 
 export default function About() {
 	return (
